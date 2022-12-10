@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>TITLE</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="main">
+				<div class="main-block">
+					<div class="section-header">
+						<h1 class="section-header__title title title_big">Blackjack</h1>
+						<p class="section-header__subtitle" id="message-el">
+							Want to play a round?
+						</p>
+					</div>
+					<div class="main-block__body">
+						<p class="main-block__cards" id="cards-el">Cards:</p>
+						<p class="main-block__sum" id="sum-el">Sum:</p>
+						<div class="main-block__control">
+							<button
+								id="start-el"
+								class="main-block__button"
+								onclick="startGame()"
+							>
+								Start Game
+							</button>
+							<button class="main-block__button" onclick="newCard()">
+								New Card
+							</button>
+							<p class="main-block__player-info" id="player-el"></p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+			<script src="js/index.js"></script>
+		</div>
+	</body>
+</html>
