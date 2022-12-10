@@ -1,0 +1,110 @@
+/* * Fonts import */
+/* https://fonts.google.com */
+/* https://webfonts.pro */
+/* https://transfonter.org (ttf to woff, woff2) */
+
+/*  &display=swap */
+/*  for cyrillic:    &subset=cyrillic-ex */
+
+/* * Fonts local import */
+
+/* * Icons Fonts */
+/* https://www.iconfinder.com/ */
+/* https://icomoon.io */
+/* * Reset styles */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* default size: 16px*/
+}
+body {
+	line-height: 1; /* default: 1*/
+	/* font-family, color */
+	/* font-size */
+	background: url("../img/table.png") 0 0 / cover repeat;
+	color: #fff;
+	font-family: serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+:root {
+	--main-color: gold;
+	--second-color: #017f3b;
+}
+/* ---------------------------------- */
+.title {
+	font-size: 36px;
+	line-height: 120%;
+	color: var(--main-color);
+}
+.title_big {
+	font-size: 42px;
+	line-height: 150%;
+}
+.main-block {
+	text-align: center;
+}
+.section-header {
+	margin-bottom: 30px;
+}
+
+.section-header__subtitle {
+	font-size: 30px;
+}
+.main-block__body > * {
+	font-size: 26px;
+	font-weight: 700;
+}
+.main-block__body > *:not(:last-child) {
+	margin-bottom: 30px;
+}
+.main-block__control > *:not(:last-child) {
+	margin-bottom: 6px;
+}
+.main-block__button {
+	display: block;
+	margin: 0px auto;
+	padding: 4px 40px;
+	background: var(--main-color);
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	color: var(--second-color);
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+}
